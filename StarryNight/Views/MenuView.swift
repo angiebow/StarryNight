@@ -9,6 +9,7 @@ import SwiftUI
 
 struct MenuView: View {
     @State private var popApod: PopoverModel?
+    @State private var popNeow: PopoverModel?
     
     var body: some View {
         VStack{
@@ -25,6 +26,25 @@ struct MenuView: View {
                     }
                     .popover(item: $popApod) {_ in
                         NASAView()
+                    }
+                }
+                .padding()
+                .border(Color.black, width: 1)
+            }
+            .padding()
+            
+            Section(){
+                HStack{
+                    Text("Near Earth Object")
+                    Spacer()
+                    Button(action:{
+                        popNeow = PopoverModel(message: "Okay")
+                    }) {
+                        Image(systemName: "arrow.right.square")
+                            .font(.system(size: 30))
+                    }
+                    .popover(item: $popNeow) {_ in
+                        NeowInputView()
                     }
                 }
                 .padding()
