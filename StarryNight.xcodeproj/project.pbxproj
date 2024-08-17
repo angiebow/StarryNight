@@ -11,6 +11,8 @@
 		FD339F772C70AA1D0053638A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD339F762C70AA1D0053638A /* ContentView.swift */; };
 		FD339F792C70AA1D0053638A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD339F782C70AA1D0053638A /* Assets.xcassets */; };
 		FD339F7C2C70AA1D0053638A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD339F7B2C70AA1D0053638A /* Preview Assets.xcassets */; };
+		FD339F842C70AAA80053638A /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD339F832C70AAA80053638A /* ApiCall.swift */; };
+		FD339F872C70AADA0053638A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD339F862C70AADA0053638A /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		FD339F762C70AA1D0053638A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FD339F782C70AA1D0053638A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD339F7B2C70AA1D0053638A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FD339F832C70AAA80053638A /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		FD339F862C70AADA0053638A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,8 @@
 		FD339F732C70AA1D0053638A /* StarryNight */ = {
 			isa = PBXGroup;
 			children = (
+				FD339F852C70AACF0053638A /* Model */,
+				FD339F822C70AA940053638A /* ViewModel */,
 				FD339F742C70AA1D0053638A /* StarryNightApp.swift */,
 				FD339F762C70AA1D0053638A /* ContentView.swift */,
 				FD339F782C70AA1D0053638A /* Assets.xcassets */,
@@ -65,6 +71,22 @@
 				FD339F7B2C70AA1D0053638A /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FD339F822C70AA940053638A /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FD339F832C70AAA80053638A /* ApiCall.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FD339F852C70AACF0053638A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FD339F862C70AADA0053638A /* DataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +160,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD339F772C70AA1D0053638A /* ContentView.swift in Sources */,
+				FD339F872C70AADA0053638A /* DataModel.swift in Sources */,
+				FD339F842C70AAA80053638A /* ApiCall.swift in Sources */,
 				FD339F752C70AA1D0053638A /* StarryNightApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
