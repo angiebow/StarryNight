@@ -12,7 +12,7 @@ import SwiftData
 struct carbonPrintApp: App {
     var body: some Scene {
         WindowGroup {
-            MainTabView()
+            MenuView()
         }
         .modelContainer(for: DataItem.self)
     }

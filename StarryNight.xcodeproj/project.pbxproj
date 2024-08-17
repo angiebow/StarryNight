@@ -12,18 +12,9 @@
 		FD339F7C2C70AA1D0053638A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD339F7B2C70AA1D0053638A /* Preview Assets.xcassets */; };
 		FD339F842C70AAA80053638A /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD339F832C70AAA80053638A /* ApiCall.swift */; };
 		FD339F872C70AADA0053638A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD339F862C70AADA0053638A /* DataModel.swift */; };
-		FDCCC0E02C70AD32007AF703 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0DF2C70AD32007AF703 /* MainTabView.swift */; };
+		FD8081502C70E70E006930B9 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD80814F2C70E70E006930B9 /* MenuView.swift */; };
 		FDCCC0E32C70ADB6007AF703 /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0E22C70ADB6007AF703 /* DataItem.swift */; };
-		FDCCC0E52C70ADE2007AF703 /* FootprintView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0E42C70ADE2007AF703 /* FootprintView.swift */; };
-		FDCCC0E72C70ADF9007AF703 /* CommunityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0E62C70ADF9007AF703 /* CommunityView.swift */; };
-		FDCCC0E92C70AE23007AF703 /* NavigationSplitViewCom.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0E82C70AE23007AF703 /* NavigationSplitViewCom.swift */; };
-		FDCCC0EB2C70AE4E007AF703 /* NavigationSplitViewFoot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0EA2C70AE4E007AF703 /* NavigationSplitViewFoot.swift */; };
 		FDCCC0ED2C70AE7E007AF703 /* NASAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0EC2C70AE7E007AF703 /* NASAView.swift */; };
-		FDCCC0EF2C70AE99007AF703 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0EE2C70AE99007AF703 /* FeedView.swift */; };
-		FDCCC0F12C70AEB3007AF703 /* CalcView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0F02C70AEB3007AF703 /* CalcView.swift */; };
-		FDCCC0F32C70AEC9007AF703 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0F22C70AEC9007AF703 /* ResultView.swift */; };
-		FDCCC0F52C70AEFB007AF703 /* GasBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0F42C70AEFB007AF703 /* GasBillView.swift */; };
-		FDCCC0F72C70AF19007AF703 /* ElectricBillView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0F62C70AF19007AF703 /* ElectricBillView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,18 +24,9 @@
 		FD339F7B2C70AA1D0053638A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FD339F832C70AAA80053638A /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
 		FD339F862C70AADA0053638A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		FDCCC0DF2C70AD32007AF703 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		FD80814F2C70E70E006930B9 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		FDCCC0E22C70ADB6007AF703 /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
-		FDCCC0E42C70ADE2007AF703 /* FootprintView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootprintView.swift; sourceTree = "<group>"; };
-		FDCCC0E62C70ADF9007AF703 /* CommunityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommunityView.swift; sourceTree = "<group>"; };
-		FDCCC0E82C70AE23007AF703 /* NavigationSplitViewCom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSplitViewCom.swift; sourceTree = "<group>"; };
-		FDCCC0EA2C70AE4E007AF703 /* NavigationSplitViewFoot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationSplitViewFoot.swift; sourceTree = "<group>"; };
 		FDCCC0EC2C70AE7E007AF703 /* NASAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAView.swift; sourceTree = "<group>"; };
-		FDCCC0EE2C70AE99007AF703 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
-		FDCCC0F02C70AEB3007AF703 /* CalcView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcView.swift; sourceTree = "<group>"; };
-		FDCCC0F22C70AEC9007AF703 /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
-		FDCCC0F42C70AEFB007AF703 /* GasBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GasBillView.swift; sourceTree = "<group>"; };
-		FDCCC0F62C70AF19007AF703 /* ElectricBillView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ElectricBillView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,17 +97,8 @@
 		FDCCC0E12C70AD38007AF703 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				FDCCC0DF2C70AD32007AF703 /* MainTabView.swift */,
-				FDCCC0E42C70ADE2007AF703 /* FootprintView.swift */,
-				FDCCC0E62C70ADF9007AF703 /* CommunityView.swift */,
-				FDCCC0E82C70AE23007AF703 /* NavigationSplitViewCom.swift */,
-				FDCCC0EA2C70AE4E007AF703 /* NavigationSplitViewFoot.swift */,
+				FD80814F2C70E70E006930B9 /* MenuView.swift */,
 				FDCCC0EC2C70AE7E007AF703 /* NASAView.swift */,
-				FDCCC0EE2C70AE99007AF703 /* FeedView.swift */,
-				FDCCC0F02C70AEB3007AF703 /* CalcView.swift */,
-				FDCCC0F22C70AEC9007AF703 /* ResultView.swift */,
-				FDCCC0F42C70AEFB007AF703 /* GasBillView.swift */,
-				FDCCC0F62C70AF19007AF703 /* ElectricBillView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -201,20 +174,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD339F872C70AADA0053638A /* DataModel.swift in Sources */,
-				FDCCC0E92C70AE23007AF703 /* NavigationSplitViewCom.swift in Sources */,
+				FD8081502C70E70E006930B9 /* MenuView.swift in Sources */,
 				FD339F842C70AAA80053638A /* ApiCall.swift in Sources */,
-				FDCCC0EF2C70AE99007AF703 /* FeedView.swift in Sources */,
-				FDCCC0F32C70AEC9007AF703 /* ResultView.swift in Sources */,
-				FDCCC0F12C70AEB3007AF703 /* CalcView.swift in Sources */,
 				FD339F752C70AA1D0053638A /* StarryNightApp.swift in Sources */,
-				FDCCC0EB2C70AE4E007AF703 /* NavigationSplitViewFoot.swift in Sources */,
 				FDCCC0E32C70ADB6007AF703 /* DataItem.swift in Sources */,
-				FDCCC0F72C70AF19007AF703 /* ElectricBillView.swift in Sources */,
 				FDCCC0ED2C70AE7E007AF703 /* NASAView.swift in Sources */,
-				FDCCC0E02C70AD32007AF703 /* MainTabView.swift in Sources */,
-				FDCCC0F52C70AEFB007AF703 /* GasBillView.swift in Sources */,
-				FDCCC0E72C70ADF9007AF703 /* CommunityView.swift in Sources */,
-				FDCCC0E52C70ADE2007AF703 /* FootprintView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

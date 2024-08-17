@@ -35,6 +35,6 @@ func formatDate(_ date: Date) -> String {
 }
 
 func formatInteger(_ number: Double) -> String {
-    let integerPart = Int(number.rounded()) // Round to nearest integer
+    let integerPart = Int(number.rounded())
     return "\(integerPart)"
 }
