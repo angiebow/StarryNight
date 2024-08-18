@@ -11,7 +11,7 @@ struct NeowInputView: View {
     @State private var startDate: String = "2024-08-01"
     @State private var endDate: String = "2024-08-07"
     @State private var asteroids: [NearEarthObject] = []
-    @State private var errorMessage: IdentifiableError?
+    @State private var errorMessage: IdentifiableErrorNeow?
     @State private var navigateToAsteroidsList: Bool = false
 
     var body: some View {
@@ -53,14 +53,14 @@ struct NeowInputView: View {
     }
 
     private func fetchAsteroids() {
-        APICaller.shared.fetchAsteroids(startDate: startDate, endDate: endDate) { result in
+        NeowAPICaller.shared.fetchAsteroids(startDate: startDate, endDate: endDate) { result in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let welcome):
                     self.asteroids = welcome.nearEarthObjects.values.flatMap { $0 }
                     self.navigateToAsteroidsList = true
                 case .failure(let error):
-                    self.errorMessage = IdentifiableError(message: error.localizedDescription)
+                    self.errorMessage = IdentifiableErrorNeow(message: error.localizedDescription)
                     self.navigateToAsteroidsList = false
                 }
             }

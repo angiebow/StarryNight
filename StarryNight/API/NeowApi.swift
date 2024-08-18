@@ -7,12 +7,12 @@
 
 import Foundation
 
-class APICaller {
-    static let shared = APICaller()
+class NeowAPICaller {
+    static let shared = NeowAPICaller()
     private let apiKey = "Xh7duhMXbKtTMDVV8vicbLBVCELWKZfsY0vCstGr"
     private let baseURL = "https://api.nasa.gov/neo/rest/v1/feed"
 
-    func fetchAsteroids(startDate: String, endDate: String, completion: @escaping (Result<Welcome, Error>) -> Void) {
+    func fetchAsteroids(startDate: String, endDate: String, completion: @escaping (Result<WelcomeNeow, Error>) -> Void) {
         guard var urlComponents = URLComponents(string: baseURL) else { return }
 
         urlComponents.queryItems = [
@@ -32,7 +32,7 @@ class APICaller {
             guard let data = data else { return }
 
             do {
-                let welcome = try JSONDecoder().decode(Welcome.self, from: data)
+                let welcome = try JSONDecoder().decode(WelcomeNeow.self, from: data)
                 completion(.success(welcome))
             } catch {
                 completion(.failure(error))

@@ -10,6 +10,7 @@ import SwiftUI
 struct MenuView: View {
     @State private var popApod: PopoverModel?
     @State private var popNeow: PopoverModel?
+    @State private var popCme: PopoverModel?
     
     var body: some View {
         VStack{
@@ -51,6 +52,26 @@ struct MenuView: View {
                 .border(Color.black, width: 1)
             }
             .padding()
+            
+            Section(){
+                HStack{
+                    Text("Coronal Mass Ejection")
+                    Spacer()
+                    Button(action:{
+                        popCme = PopoverModel(message: "Okay")
+                    }) {
+                        Image(systemName: "arrow.right.square")
+                            .font(.system(size: 30))
+                    }
+                    .popover(item: $popCme) {_ in
+                        CMEView()
+                    }
+                }
+                .padding()
+                .border(Color.black, width: 1)
+            }
+            .padding()
+
             
             Spacer()
         }

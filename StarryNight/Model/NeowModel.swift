@@ -12,13 +12,13 @@
 
 import Foundation
 
-struct IdentifiableError: Identifiable {
+struct IdentifiableErrorNeow: Identifiable {
     let id = UUID()
     let message: String
 }
 
 // MARK: - Welcome
-struct Welcome: Codable {
+struct WelcomeNeow: Codable {
     let links: WelcomeLinks
     let elementCount: Int
     let nearEarthObjects: [String: [NearEarthObject]]
