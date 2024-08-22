@@ -16,7 +16,12 @@ struct MenuView: View {
             StarryNightBackground()
                 .edgesIgnoringSafeArea(.all)
             
-            VStack(spacing: 40) {
+            VStack(spacing: 20) {
+                
+                Text("Discover")
+                    .foregroundColor(.white)
+                    .font(.title)
+                    .fontWeight(.bold)
                 
                 Section {
                     VStack(spacing: 0) {
