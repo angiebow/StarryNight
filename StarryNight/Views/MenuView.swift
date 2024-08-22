@@ -8,72 +8,115 @@
 import SwiftUI
 
 struct MenuView: View {
-    @State private var popApod: PopoverModel?
-    @State private var popNeow: PopoverModel?
-    @State private var popCme: PopoverModel?
+    @State private var popApod: Bool = false
+    @State private var popNeow: Bool = false
     
     var body: some View {
-        VStack{
+        ZStack {
+            StarryNightBackground()
+                .edgesIgnoringSafeArea(.all)
             
-            Section(){
-                HStack{
-                    Text("Astronomy Picture of the Day")
-                    Spacer()
-                    Button(action:{
-                        popApod = PopoverModel(message: "Okay")
-                    }) {
-                        Image(systemName: "arrow.right.square")
-                            .font(.system(size: 30))
+            VStack(spacing: 40) {
+                
+                Section {
+                    VStack(spacing: 0) {
+                        Image("apodPic")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(height: 150)
+                            .clipped()
+                        
+                        HStack {
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text("Astronomy Picture of the Day")
+                                    .foregroundColor(.white)
+                                    .font(.title2)
+                                    .fontWeight(.bold)
+                                Text("Explore the cosmos through daily images")
+                                    .foregroundColor(.gray)
+                                    .font(.subheadline)
+                            }
+                            Spacer()
+                            Button(action: {
+                                popApod = true
+                            }) {
+                                Image(systemName: "arrow.right.square")
+                                    .font(.system(size: 30))
+                                    .foregroundColor(.white)
+                            }
+                            .popover(isPresented: $popApod) {
+                                NASAView()
+                            }
+                        }
+                        .padding()
+                        .background(Color.black.opacity(0.8))
                     }
-                    .popover(item: $popApod) {_ in
-                        NASAView()
-                    }
+                    .cornerRadius(16)
+                    .frame(height: 300)
                 }
-                .padding()
-                .border(Color.black, width: 1)
-            }
-            .padding()
-            
-            Section(){
-                HStack{
-                    Text("Near Earth Object")
-                    Spacer()
-                    Button(action:{
-                        popNeow = PopoverModel(message: "Okay")
-                    }) {
-                        Image(systemName: "arrow.right.square")
-                            .font(.system(size: 30))
+                .padding(.horizontal)
+                
+                Section {
+                    VStack(spacing: 0) {
+                        Image("neowPic")
+                            .resizable()
+                            .scaledToFill()
+                            .frame(height: 150)
+                            .clipped()
+                        
+                        HStack {
+                            VStack(alignment: .leading, spacing: 8) {
+                                Text("Near Earth Object")
+                                    .foregroundColor(.white)
+                                    .font(.title2)
+                                    .fontWeight(.bold)
+                                Text("Track asteroids approaching Earth")
+                                    .foregroundColor(.gray)
+                                    .font(.subheadline)
+                            }
+                            Spacer()
+                            Button(action: {
+                                popNeow = true
+                            }) {
+                                Image(systemName: "arrow.right.square")
+                                    .font(.system(size: 30))
+                                    .foregroundColor(.white)
+                            }
+                            .popover(isPresented: $popNeow) {
+                                NeowInputView()
+                            }
+                        }
+                        .padding()
+                        .background(Color.black.opacity(0.8))
                     }
-                    .popover(item: $popNeow) {_ in
-                        NeowInputView()
-                    }
+                    .cornerRadius(16)
+                    .frame(height: 300)
                 }
-                .padding()
-                .border(Color.black, width: 1)
+                .padding(.horizontal)
+                
+                Spacer()
             }
-            .padding()
-            
-            Section(){
-                HStack{
-                    Text("Coronal Mass Ejection")
-                    Spacer()
-                    Button(action:{
-                        popCme = PopoverModel(message: "Okay")
-                    }) {
-                        Image(systemName: "arrow.right.square")
-                            .font(.system(size: 30))
-                    }
-                    .popover(item: $popCme) {_ in
-                        CMEView()
-                    }
-                }
-                .padding()
-                .border(Color.black, width: 1)
-            }
-            .padding()
+            .padding(.vertical, 60)
+        }
+    }
+}
 
+struct StarryNightBackground: View {
+    let starCount = 100
+    let starSize: CGFloat = 2.5
+    
+    var body: some View {
+        ZStack {
+            LinearGradient(gradient: Gradient(colors: [Color.black, Color.blue.opacity(0.7)]), startPoint: .top, endPoint: .bottom)
             
-            Spacer()
+            ForEach(0..<starCount, id: \.self) { _ in
+                Circle()
+                    .fill(Color.white)
+                    .frame(width: starSize, height: starSize)
+                    .position(x: CGFloat.random(in: 0...UIScreen.main.bounds.width),
+                              y: CGFloat.random(in: 0...UIScreen.main.bounds.height))
+                    .opacity(Double.random(in: 0.5...1.0))
+            }
         }
     }
 }

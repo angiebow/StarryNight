@@ -10,18 +10,15 @@
 		FD339F752C70AA1D0053638A /* StarryNightApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD339F742C70AA1D0053638A /* StarryNightApp.swift */; };
 		FD339F792C70AA1D0053638A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD339F782C70AA1D0053638A /* Assets.xcassets */; };
 		FD339F7C2C70AA1D0053638A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD339F7B2C70AA1D0053638A /* Preview Assets.xcassets */; };
-		FD339F842C70AAA80053638A /* ApiCall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD339F832C70AAA80053638A /* ApiCall.swift */; };
+		FD339F842C70AAA80053638A /* ApodApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD339F832C70AAA80053638A /* ApodApi.swift */; };
 		FD339F872C70AADA0053638A /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD339F862C70AADA0053638A /* DataModel.swift */; };
 		FD8081502C70E70E006930B9 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD80814F2C70E70E006930B9 /* MenuView.swift */; };
-		FD8081522C70EFD6006930B9 /* NeowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8081512C70EFD6006930B9 /* NeowView.swift */; };
+		FD8081522C70EFD6006930B9 /* InputNeowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8081512C70EFD6006930B9 /* InputNeowView.swift */; };
 		FD8081542C70F0E5006930B9 /* NeowModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8081532C70F0E5006930B9 /* NeowModel.swift */; };
 		FD8081562C70F159006930B9 /* NeowApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8081552C70F159006930B9 /* NeowApi.swift */; };
-		FD8081582C70F5A8006930B9 /* AsteroidView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8081572C70F5A8006930B9 /* AsteroidView.swift */; };
-		FD80815A2C70F8D1006930B9 /* CmeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8081592C70F8D1006930B9 /* CmeModel.swift */; };
-		FD80815C2C70F95F006930B9 /* CmeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD80815B2C70F95F006930B9 /* CmeView.swift */; };
-		FD8081602C70F9BE006930B9 /* CmeApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD80815F2C70F9BE006930B9 /* CmeApi.swift */; };
+		FD8081582C70F5A8006930B9 /* ResultNeowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD8081572C70F5A8006930B9 /* ResultNeowView.swift */; };
 		FDCCC0E32C70ADB6007AF703 /* DataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0E22C70ADB6007AF703 /* DataItem.swift */; };
-		FDCCC0ED2C70AE7E007AF703 /* NASAView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0EC2C70AE7E007AF703 /* NASAView.swift */; };
+		FDCCC0ED2C70AE7E007AF703 /* ApodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDCCC0EC2C70AE7E007AF703 /* ApodView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,18 +26,15 @@
 		FD339F742C70AA1D0053638A /* StarryNightApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarryNightApp.swift; sourceTree = "<group>"; };
 		FD339F782C70AA1D0053638A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD339F7B2C70AA1D0053638A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FD339F832C70AAA80053638A /* ApiCall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiCall.swift; sourceTree = "<group>"; };
+		FD339F832C70AAA80053638A /* ApodApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodApi.swift; sourceTree = "<group>"; };
 		FD339F862C70AADA0053638A /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		FD80814F2C70E70E006930B9 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
-		FD8081512C70EFD6006930B9 /* NeowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeowView.swift; sourceTree = "<group>"; };
+		FD8081512C70EFD6006930B9 /* InputNeowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputNeowView.swift; sourceTree = "<group>"; };
 		FD8081532C70F0E5006930B9 /* NeowModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeowModel.swift; sourceTree = "<group>"; };
 		FD8081552C70F159006930B9 /* NeowApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeowApi.swift; sourceTree = "<group>"; };
-		FD8081572C70F5A8006930B9 /* AsteroidView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsteroidView.swift; sourceTree = "<group>"; };
-		FD8081592C70F8D1006930B9 /* CmeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CmeModel.swift; sourceTree = "<group>"; };
-		FD80815B2C70F95F006930B9 /* CmeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CmeView.swift; sourceTree = "<group>"; };
-		FD80815F2C70F9BE006930B9 /* CmeApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CmeApi.swift; sourceTree = "<group>"; };
+		FD8081572C70F5A8006930B9 /* ResultNeowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultNeowView.swift; sourceTree = "<group>"; };
 		FDCCC0E22C70ADB6007AF703 /* DataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItem.swift; sourceTree = "<group>"; };
-		FDCCC0EC2C70AE7E007AF703 /* NASAView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NASAView.swift; sourceTree = "<group>"; };
+		FDCCC0EC2C70AE7E007AF703 /* ApodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApodView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +88,8 @@
 		FD339F822C70AA940053638A /* API */ = {
 			isa = PBXGroup;
 			children = (
-				FD339F832C70AAA80053638A /* ApiCall.swift */,
+				FD339F832C70AAA80053638A /* ApodApi.swift */,
 				FD8081552C70F159006930B9 /* NeowApi.swift */,
-				FD80815F2C70F9BE006930B9 /* CmeApi.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -107,7 +100,6 @@
 				FD339F862C70AADA0053638A /* DataModel.swift */,
 				FDCCC0E22C70ADB6007AF703 /* DataItem.swift */,
 				FD8081532C70F0E5006930B9 /* NeowModel.swift */,
-				FD8081592C70F8D1006930B9 /* CmeModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -116,10 +108,9 @@
 			isa = PBXGroup;
 			children = (
 				FD80814F2C70E70E006930B9 /* MenuView.swift */,
-				FDCCC0EC2C70AE7E007AF703 /* NASAView.swift */,
-				FD8081512C70EFD6006930B9 /* NeowView.swift */,
-				FD8081572C70F5A8006930B9 /* AsteroidView.swift */,
-				FD80815B2C70F95F006930B9 /* CmeView.swift */,
+				FDCCC0EC2C70AE7E007AF703 /* ApodView.swift */,
+				FD8081512C70EFD6006930B9 /* InputNeowView.swift */,
+				FD8081572C70F5A8006930B9 /* ResultNeowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -194,18 +185,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FD80815A2C70F8D1006930B9 /* CmeModel.swift in Sources */,
 				FD339F872C70AADA0053638A /* DataModel.swift in Sources */,
-				FD80815C2C70F95F006930B9 /* CmeView.swift in Sources */,
-				FD8081522C70EFD6006930B9 /* NeowView.swift in Sources */,
+				FD8081522C70EFD6006930B9 /* InputNeowView.swift in Sources */,
 				FD8081502C70E70E006930B9 /* MenuView.swift in Sources */,
-				FD8081582C70F5A8006930B9 /* AsteroidView.swift in Sources */,
-				FD339F842C70AAA80053638A /* ApiCall.swift in Sources */,
+				FD8081582C70F5A8006930B9 /* ResultNeowView.swift in Sources */,
+				FD339F842C70AAA80053638A /* ApodApi.swift in Sources */,
 				FD8081542C70F0E5006930B9 /* NeowModel.swift in Sources */,
 				FD339F752C70AA1D0053638A /* StarryNightApp.swift in Sources */,
 				FDCCC0E32C70ADB6007AF703 /* DataItem.swift in Sources */,
-				FD8081602C70F9BE006930B9 /* CmeApi.swift in Sources */,
-				FDCCC0ED2C70AE7E007AF703 /* NASAView.swift in Sources */,
+				FDCCC0ED2C70AE7E007AF703 /* ApodView.swift in Sources */,
 				FD8081562C70F159006930B9 /* NeowApi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
